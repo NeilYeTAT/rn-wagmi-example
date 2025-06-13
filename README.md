@@ -91,7 +91,7 @@ eas build --platform android
 
 感谢 🙏🏻 `ChatGPT`
 
-```json
+```js
 module.exports = function (api) {
   api.cache(true);
   return {

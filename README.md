@@ -13,6 +13,8 @@
 
 参考：[Why use empty whitelisted domains?](https://github.com/WalletConnect/walletconnect-monorepo/issues/2934)
 
+### 2. 启动！
+
 ```shell
 npm install
 npm run android

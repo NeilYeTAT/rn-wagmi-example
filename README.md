@@ -4,6 +4,15 @@
 
 ## 🚀 运行项目
 
+### 1. Reown 配置
+
+[https://cloud.reown.com](https://cloud.reown.com)
+
+- 只需要在 `https://cloud.reown.com` 获取 `Project ID`，然后在 `app/_layout.tsx` 中对应位置填写。
+- 不需要配置 `Project Domains` 和 `Mobile Application IDs`
+
+参考：[Why use empty whitelisted domains?](https://github.com/WalletConnect/walletconnect-monorepo/issues/2934)
+
 ```shell
 npm install
 npm run android
@@ -70,22 +79,13 @@ eas build --platform android
 
 ## ⚠️ 注意事项
 
-### 1. Reown 配置
-
-[https://cloud.reown.com](https://cloud.reown.com)
-
-- 只需要在 `https://cloud.reown.com` 获取 `Project ID`，然后在 `app/_layout.tsx` 中对应位置填写。
-- 不需要配置 `Project Domains` 和 `Mobile Application IDs`
-
-参考：[Why use empty whitelisted domains?](https://github.com/WalletConnect/walletconnect-monorepo/issues/2934)
-
-### 2. 如何获取 钱包/dapp 的 package name?
+### 1. 如何获取 钱包/dapp 的 package name?
 
 - google play 搜索对应的 app，搜索栏会有 `https://play.google.com/store/apps/details?id=io.cityofzion.neon`，id 后即为 package name
 
 > `all wallets` 选项中集成了很多钱包，一般不需要手动去 `queries.js` 中特别配置
 
-### 3. 添加 Babel 配置文件(否则会报错)
+### 2. 添加 Babel 配置文件(否则会报错)
 
 确保根目录存在 `babel.config.js` 文件，内容示例：
 

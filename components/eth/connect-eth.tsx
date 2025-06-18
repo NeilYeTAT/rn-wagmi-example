@@ -1,5 +1,5 @@
 import { AppKitButton } from "@reown/appkit-wagmi-react-native";
 
-export default function ConnectView() {
+export default function ConnectEth() {
   return <AppKitButton />;
 }
